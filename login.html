@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Velox Market</title>
+<link rel="icon" href="assets/velox-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/velox.css">
+</head>
+<body>
+
+<div class="auth-shell" data-page="auth">
+  <div class="auth-topbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/velox-icon.png" alt="" class="logo-icon">
+        <span class="logo-word">Velox<span>Market</span><small>Professional · Secure · Reliable</small></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <img src="assets/velox-logo-trimmed.png" alt="Velox Market" class="logo-full">
+      <div class="auth-tagline">Professional · Secure · Reliable</div>
+
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab is-active" data-tab="login">Log in</button>
+        <button type="button" class="auth-tab" data-tab="register">Create account</button>
+      </div>
+
+      <!-- LOG IN -->
+      <form class="auth-panel is-active" data-panel="login" id="vm-login-form">
+        <div class="field">
+          <label>I am signing in as a</label>
+          <div class="role-picker">
+            <button type="button" class="role-btn is-selected" data-role="consumer">Consumer</button>
+            <button type="button" class="role-btn" data-role="producer">Producer</button>
+            <button type="button" class="role-btn" data-role="courier">Courier</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="vm-login-email">Email</label>
+          <input id="vm-login-email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="vm-login-password">Password</label>
+          <input id="vm-login-password" type="password" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+
+        <div class="divider">or</div>
+        <button type="button" class="btn btn-wallet btn-block" data-wallet-connect>Connect Web3 Wallet</button>
+      </form>
+
+      <!-- CREATE ACCOUNT -->
+      <form class="auth-panel" data-panel="register" id="vm-register-form">
+        <div class="field">
+          <label>I want to join as a</label>
+          <div class="role-picker">
+            <button type="button" class="role-btn is-selected" data-role="consumer">Consumer</button>
+            <button type="button" class="role-btn" data-role="producer">Producer</button>
+            <button type="button" class="role-btn" data-role="courier">Courier</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="vm-reg-name">Full name</label>
+          <input id="vm-reg-name" type="text" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="vm-reg-email">Email</label>
+          <input id="vm-reg-email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="vm-reg-password">Password</label>
+          <input id="vm-reg-password" type="password" required placeholder="Create a password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create account</button>
+
+        <div class="divider">or</div>
+        <button type="button" class="btn btn-wallet btn-block" data-wallet-connect>Connect Web3 Wallet</button>
+      </form>
+
+      <div class="auth-foot">
+        By continuing you agree to Velox Market's <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

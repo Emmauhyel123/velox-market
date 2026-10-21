@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post a Free Ad — Velox Market</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/velox.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="location-pick">📍 Lagos <span aria-hidden="true">▾</span></div>
+    <div class="topbar-links"><a href="#">Help &amp; Support</a><a href="#">Safety Tips</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo"><img src="assets/velox-icon.png" alt="" class="logo-icon">
+      <span class="logo-word">Velox<span>Market</span><small>Professional · Secure · Reliable</small></span></a>
+    <form class="search-form" action="category.html">
+      <select class="search-cat" aria-label="Category"><option>All Categories</option></select>
+      <input class="search-input" type="text" name="q" placeholder="Search Velox Market">
+      <button class="search-submit" type="submit">🔍 <span>Search</span></button>
+    </form>
+    <div class="header-actions">
+      <div data-account-slot></div>
+      <a href="#" class="icon-link">♡ <span>Saved</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle categories">☰</button>
+  </div>
+  <nav class="cat-strip" aria-label="Browse categories">
+    <div class="container">
+      <a href="category.html">📱 Phones &amp; Tablets</a><a href="category.html">🚗 Vehicles</a>
+      <a href="category.html">🏠 Property</a><a href="category.html">👗 Fashion</a>
+      <a href="category.html">💻 Electronics</a><a href="category.html">🛠️ Services</a>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Post an ad</span></div>
+  <div style="margin-bottom:20px;">
+    <h1 style="font-size:1.6rem;">Post your ad for free</h1>
+    <p style="color:var(--ink-500);font-size:.92rem;">Reach thousands of buyers across Nigeria in minutes.</p>
+  </div>
+</div>
+
+<div class="container post-layout">
+  <div>
+    <div class="stepper">
+      <div class="step-item is-active"><span class="step-dot mono">1</span><span>Category</span></div>
+      <div class="step-item"><span class="step-dot mono">2</span><span>Details</span></div>
+      <div class="step-item"><span class="step-dot mono">3</span><span>Photos</span></div>
+      <div class="step-item"><span class="step-dot mono">4</span><span>Price &amp; Location</span></div>
+      <div class="step-item"><span class="step-dot mono">5</span><span>Contact</span></div>
+    </div>
+
+    <div class="form-card">
+      <form onsubmit="return false;">
+
+        <!-- STEP 1: CATEGORY -->
+        <div class="form-panel is-active">
+          <h3>What are you selling?</h3>
+          <p>Choose the category that best matches your item.</p>
+          <div class="cat-picker">
+            <button type="button" class="cat-pick-btn is-selected"><span class="tile-icon">📱</span>Phones &amp; Tablets</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">🚗</span>Vehicles</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">🏠</span>Property</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">👗</span>Fashion</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">💻</span>Electronics</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">🛋️</span>Furniture &amp; Home</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">💼</span>Jobs</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">🛠️</span>Services</button>
+            <button type="button" class="cat-pick-btn"><span class="tile-icon">🐐</span>Animals &amp; Pets</button>
+          </div>
+          <div class="form-nav"><span></span><button type="button" class="btn btn-primary" data-step-next>Continue →</button></div>
+        </div>
+
+        <!-- STEP 2: DETAILS -->
+        <div class="form-panel">
+          <h3>Tell buyers about it</h3>
+          <p>A clear title and honest description sell faster.</p>
+          <div class="field-row">
+            <div class="field full">
+              <label>Ad title</label>
+              <input type="text" placeholder="e.g. iPhone 13 Pro Max 256GB, Sierra Blue">
+            </div>
+            <div class="field">
+              <label>Brand</label>
+              <select><option>Apple</option><option>Samsung</option><option>Tecno</option><option>Infinix</option></select>
+            </div>
+            <div class="field">
+              <label>Condition</label>
+              <select><option>Brand new</option><option>Foreign used</option><option>Nigerian used</option></select>
+            </div>
+            <div class="field full">
+              <label>Description</label>
+              <textarea placeholder="Describe the item's condition, features, and reason for selling..."></textarea>
+            </div>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" data-step-prev>← Back</button>
+            <button type="button" class="btn btn-primary" data-step-next>Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: PHOTOS -->
+        <div class="form-panel">
+          <h3>Add photos</h3>
+          <p>Ads with at least 3 photos get up to 5x more responses.</p>
+          <div class="upload-zone">
+            <b>Drag photos here or click to upload</b>
+            JPG or PNG, up to 10 photos, max 5MB each
+          </div>
+          <div class="upload-grid">
+            <div class="upload-slot">＋</div><div class="upload-slot">＋</div><div class="upload-slot">＋</div>
+            <div class="upload-slot">＋</div><div class="upload-slot">＋</div>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" data-step-prev>← Back</button>
+            <button type="button" class="btn btn-primary" data-step-next>Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 4: PRICE & LOCATION -->
+        <div class="form-panel">
+          <h3>Set your price &amp; location</h3>
+          <p>Buyers can filter by price, so keep it competitive.</p>
+          <div class="field-row">
+            <div class="field">
+              <label>Price (₦)</label>
+              <input type="number" placeholder="e.g. 520000">
+            </div>
+            <div class="field">
+              <label>&nbsp;</label>
+              <label style="display:flex;align-items:center;gap:8px;font-weight:500;">
+                <input type="checkbox" style="width:auto;" checked> Price is negotiable
+              </label>
+            </div>
+            <div class="field">
+              <label>State</label>
+              <select><option>Lagos</option><option>Abuja (FCT)</option><option>Rivers</option><option>Oyo</option></select>
+            </div>
+            <div class="field">
+              <label>City / Area</label>
+              <input type="text" placeholder="e.g. Ikeja">
+            </div>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" data-step-prev>← Back</button>
+            <button type="button" class="btn btn-primary" data-step-next>Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 5: CONTACT -->
+        <div class="form-panel">
+          <h3>How should buyers reach you?</h3>
+          <p>Your number is only shown to buyers who tap "Show phone number."</p>
+          <div class="field-row">
+            <div class="field">
+              <label>Full name</label>
+              <input type="text" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label>Phone number</label>
+              <input type="text" placeholder="080X XXX XXXX">
+            </div>
+            <div class="field full">
+              <label style="display:flex;align-items:center;gap:8px;font-weight:500;">
+                <input type="checkbox" style="width:auto;" checked> Allow in-app chat messages
+              </label>
+            </div>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" data-step-prev>← Back</button>
+            <button type="button" class="btn btn-primary" data-step-next>✓ Publish ad</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <aside class="tips-sidebar">
+    <div class="tips-card">
+      <h4>💡 Tips for a great ad</h4>
+      <ul>
+        <li>Use natural daylight for photos — no filters needed.</li>
+        <li>Be specific: brand, model, size, and condition.</li>
+        <li>Price it fairly — check similar ads first.</li>
+        <li>Respond quickly to boost your seller rating.</li>
+      </ul>
+    </div>
+    <div class="tips-card" style="background:var(--marigold-100);border-color:var(--marigold-500);">
+      <h4>🛡️ Stay safe</h4>
+      <ul>
+        <li>Never share OTPs or bank PINs with buyers.</li>
+        <li>Meet in public places for handover.</li>
+        <li>Report suspicious buyers to our support team.</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo"><img src="assets/velox-icon.png" alt="" class="logo-icon">
+      <span class="logo-word">Velox<span>Market</span><small>Professional · Secure · Reliable</small></span></a>
+        <p>Nigeria's free marketplace to buy and sell phones, vehicles, property, fashion, jobs and services.</p>
+        <div class="social-row"><a href="#">f</a><a href="#">ig</a><a href="#">x</a><a href="#">yt</a></div>
+      </div>
+      <div class="footer-col"><h5>Categories</h5>
+        <ul><li><a href="category.html">Phones &amp; Tablets</a></li><li><a href="category.html">Vehicles</a></li>
+        <li><a href="category.html">Property</a></li></ul>
+      </div>
+      <div class="footer-col"><h5>Velox Market</h5>
+        <ul><li><a href="#">About us</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li></ul>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <ul><li><a href="#">Help centre</a></li><li><a href="#">Safety tips</a></li><li><a href="#">Terms of use</a></li></ul>
+      </div>
+      <div class="footer-col"><h5>Stay updated</h5>
+        <form class="newsletter" onsubmit="event.preventDefault(); showToast('Subscribed! Check your inbox.');">
+          <input type="email" placeholder="you@email.com" required aria-label="Email">
+          <button class="btn btn-primary btn-sm" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Velox Market. All rights reserved.</span>
+      <div class="locales"><a href="#">English</a><a href="#">Français</a><a href="#">Hausa</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="authModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close-auth aria-label="Close">✕</button>
+    <div class="modal-tabs"><button class="modal-tab is-active">Quick sign in</button></div>
+    <form class="modal-panel is-active">
+      <p style="font-size:.82rem;color:var(--ink-500);margin:-8px 0 4px;">Sign in to message sellers and track your activity.</p>
+      <div class="field"><label>Phone number or email</label><input type="text" required placeholder="080X XXX XXXX"></div>
+      <div class="field"><label>Password</label><input type="password" required placeholder="••••••••"></div>
+      <button class="btn btn-primary btn-block" type="submit">Log in</button>
+    </form>
+    <p style="text-align:center;font-size:.8rem;color:var(--ink-500);margin-top:14px;">New here? <a href="login.html" style="font-weight:700;color:var(--indigo-800);">Create a free account</a></p>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

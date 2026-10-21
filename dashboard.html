@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Velox Market</title>
+<link rel="icon" href="assets/velox-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/velox.css">
+</head>
+<body data-page="dashboard">
+
+<div class="dash-topbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/velox-icon.png" alt="" class="logo-icon">
+      <span class="logo-word">Velox<span>Market</span></span>
+    </a>
+    <div class="dash-actions">
+      <span class="role-badge"><span class="dot"></span><span data-role-badge>consumer</span></span>
+      <a href="index.html" class="icon-link" style="color:#fff;">Marketplace</a>
+      <button class="logout-btn" id="vm-logout-btn" type="button">Log Out</button>
+    </div>
+  </div>
+</div>
+
+<section class="dash-hero">
+  <div class="container">
+    <span class="dash-hero-eyebrow">Your dashboard</span>
+    <h1>Welcome back, <span data-account-name>there</span></h1>
+    <p>Here's what's happening with your account today.</p>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- ============ CONSUMER STATS ============ -->
+  <div class="dash-stats" data-role-panel="consumer">
+    <div class="dash-stat"><b>3</b><span>Active orders</span></div>
+    <div class="dash-stat"><b>12</b><span>Saved listings</span></div>
+    <div class="dash-stat"><b>48</b><span>Completed orders</span></div>
+    <div class="dash-stat"><b>2</b><span>Unread messages</span></div>
+  </div>
+
+  <!-- ============ PRODUCER STATS ============ -->
+  <div class="dash-stats" data-role-panel="producer">
+    <div class="dash-stat"><b>14</b><span>Active listings</span></div>
+    <div class="dash-stat"><b>6</b><span>Incoming orders</span></div>
+    <div class="dash-stat"><b>₦482,000</b><span>This month's payout</span></div>
+    <div class="dash-stat"><b>96%</b><span>Response rate</span></div>
+  </div>
+
+  <!-- ============ COURIER STATS ============ -->
+  <div class="dash-stats" data-role-panel="courier">
+    <div class="dash-stat"><b>5</b><span>Available pickups</span></div>
+    <div class="dash-stat"><b>2</b><span>Active deliveries</span></div>
+    <div class="dash-stat"><b>31</b><span>Completed this week</span></div>
+    <div class="dash-stat"><b>₦46,500</b><span>Weekly earnings</span></div>
+  </div>
+</div>
+
+<div class="dash-body">
+  <div class="container">
+
+    <!-- ============ CONSUMER PANEL ============ -->
+    <div class="dash-grid" data-role-panel="consumer">
+      <div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Active orders</h3><a href="#">View all</a></div>
+          <div class="dash-list-item">
+            <div><b>iPhone 13 Pro Max 256GB</b><span class="sub">Seller: Tunde A. · Ikeja, Lagos</span></div>
+            <span class="status-pill transit">In transit</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>Ankara Print Set, Custom Tailored</b><span class="sub">Seller: Bisi F. · Yaba, Lagos</span></div>
+            <span class="status-pill pending">Awaiting pickup</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>Toyota Camry 2018, Full Option</b><span class="sub">Seller: Segun O. · Lekki, Lagos</span></div>
+            <span class="status-pill done">Delivered</span>
+          </div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Saved listings</h3><a href="category.html">Browse more</a></div>
+          <div class="dash-list-item">
+            <div><b>3 Bedroom Flat, Serviced Estate</b><span class="sub">₦45,000,000 · Ajah, Lagos</span></div>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone 12 Pro 128GB, Graphite</b><span class="sub">₦450,000 · Ikeja, Lagos</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Quick actions</h3></div>
+          <div class="quick-actions">
+            <a href="category.html" class="btn btn-primary btn-block">Browse marketplace</a>
+            <a href="index.html" class="btn btn-ghost btn-block">Message center</a>
+          </div>
+        </div>
+        <div class="tips-card">
+          <h4>🛡️ Safety tips</h4>
+          <ul>
+            <li>Meet in a safe, public place to inspect the item.</li>
+            <li>Never pay in advance, even for delivery.</li>
+            <li>Keep every conversation inside Velox Market chat.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PRODUCER PANEL ============ -->
+    <div class="dash-grid" data-role-panel="producer">
+      <div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Incoming orders</h3><a href="#">View all</a></div>
+          <div class="dash-list-item">
+            <div><b>iPhone 13 Pro Max 256GB</b><span class="sub">Buyer: Chidi N. · ₦520,000</span></div>
+            <span class="status-pill pending">New</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone 12, 64GB, Black</b><span class="sub">Buyer: Amaka U. · ₦265,000</span></div>
+            <span class="status-pill transit">Preparing</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone SE 2020, 64GB</b><span class="sub">Buyer: Femi K. · ₦140,000</span></div>
+            <span class="status-pill done">Handed to courier</span>
+          </div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>My listings</h3><a href="post-ad.html">＋ Post a new ad</a></div>
+          <div class="dash-list-item">
+            <div><b>iPhone 13 Pro Max 256GB, Sierra Blue</b><span class="sub">₦520,000 · 342 views</span></div>
+            <span class="status-pill done">Active</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone 11, 128GB, UK Used</b><span class="sub">₦310,000 · 118 views</span></div>
+            <span class="status-pill done">Active</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone XR, 64GB</b><span class="sub">₦185,000 · Sold to Amaka U.</span></div>
+            <span class="status-pill transit">Sold</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Quick actions</h3></div>
+          <div class="quick-actions">
+            <a href="post-ad.html" class="btn btn-primary btn-block">＋ Post a new ad</a>
+            <a href="index.html" class="btn btn-ghost btn-block">View storefront</a>
+          </div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Payouts</h3></div>
+          <div class="dash-list-item"><div><b>Available balance</b></div><b class="mono">₦482,000</b></div>
+          <div class="dash-list-item"><div><b>Last payout</b><span class="sub">14 July 2026</span></div><b class="mono">₦310,000</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ COURIER PANEL ============ -->
+    <div class="dash-grid" data-role-panel="courier">
+      <div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Available pickups</h3><a href="#">View map</a></div>
+          <div class="dash-list-item">
+            <div><b>Ankara Print Set</b><span class="sub">Pickup: Yaba → Drop: Surulere · 3.2km</span></div>
+            <span class="status-pill pending">₦1,800</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone 12, 64GB, Black</b><span class="sub">Pickup: Ikeja → Drop: Ajah · 21km</span></div>
+            <span class="status-pill pending">₦5,400</span>
+          </div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Active deliveries</h3><a href="#">View all</a></div>
+          <div class="dash-list-item">
+            <div><b>iPhone 13 Pro Max 256GB</b><span class="sub">To: Chidi N. · Lekki Phase 1</span></div>
+            <span class="status-pill transit">In transit</span>
+          </div>
+          <div class="dash-list-item">
+            <div><b>iPhone SE 2020, 64GB</b><span class="sub">To: Femi K. · Alaba</span></div>
+            <span class="status-pill done">Delivered</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="dash-card">
+          <div class="dash-card-head"><h3>Quick actions</h3></div>
+          <div class="quick-actions">
+            <button class="btn btn-primary btn-block" type="button" onclick="showToast('You are now online for pickups.')">Go online</button>
+            <a href="#" class="btn btn-ghost btn-block">View weekly earnings</a>
+          </div>
+        </div>
+        <div class="tips-card">
+          <h4>🛡️ On the road</h4>
+          <ul>
+            <li>Confirm the item matches the listing before pickup.</li>
+            <li>Photograph the handover for every delivery.</li>
+            <li>Report any unsafe pickup address to support.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
